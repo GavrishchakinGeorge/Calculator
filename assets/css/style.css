@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    /* определяет внешний отступ на всех четырёх сторонах элемента. */
+    font-family: 'Arial', sans-serif;
+    /* 
+    определяет приоритетный список из одного или
+    нескольких названий семейства шрифтов и/или общее имя шрифта для выбранного элемента.
+    */
+    font-size: 50px;
+    /* определяет размер шрифта. */
+    line-height: 2;
+    /* Межстрочный отступ */
+    color: #333;
+}
+.calculatorWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    grid-gap: 5px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.calc-screen{
+    border: none;
+    margin-top: 5px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    text-align: right;
+    background-color: rgb(34, 33, 33);
+    height: 150px;
+    color: white;
+}
+
+.input {
+    border: none;
+    margin-top: 5px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    text-align: right;
+    background-color: rgb(34, 33, 33);
+    height: 100px;
+    color: white;
+}
+
+.input-pow {
+    border: none;
+    margin-top: 5px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    text-align: right;
+    background-color: rgb(34, 33, 33);
+    height: 30px;
+    color: rgb(150, 150, 150);
+    font-size: 25px;
+}
+
+.main-wrapper {
+    border: solid rgb(66, 64, 64) 3px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 385px;
+    
+    background-color: rgb(34, 33, 33);    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.button-class {
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(66, 64, 64);
+    box-shadow: 2px 3px 2px rgb(22, 22, 22);
+    color: white;
+}
+.button-class:hover{
+    background-color: rgb(88, 88, 88);
+}
